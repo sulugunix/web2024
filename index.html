@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/assets/styles/style.css">
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
     <title>IT WEBSITE</title>
 </head>
 <body>
@@ -67,12 +67,12 @@
                 <div class="right-block">
                     <div class="bg-images">
                         <div class="left-col">
-                            <img class="left-img" src="src/assets/img/column-left.webp" alt="">
-                            <img class="left-img" src="src/assets/img/column-left.webp" alt="">
+                            <img class="left-img" src="/src/assets/img/column-left.webp" alt="">
+                            <img class="left-img" src="/src/assets/img/column-left.webp" alt="">
                         </div>
                         <div class="right-col">
-                            <img class="right-img" src="src/assets/img/column-right.webp" alt="">
-                            <img class="right-img" src="src/assets/img/column-right.webp" alt="">
+                            <img class="right-img" src="/src/assets/img/column-right.webp" alt="">
+                            <img class="right-img" src="/src/assets/img/column-right.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
         <section class="developed-projects common-section">
             <div class="container">
                 <div class="title">
-                    <h2>Developed more than 100 projects in 15 industries</h2>
+                    <h2>Developed more than <span>100</span> projects in <span>15</span> industries</h2>
                 </div>
                 <div class="industries">
                     <div class="col">
@@ -165,7 +165,7 @@
                                 <img src="src/assets/img/live_outline_24.svg" alt="">
                                 <span>AR technology</span>
                             </li>
-                            <li>
+                            <li class="last-li last-li--one">
                                 <img src="src/assets/img/video_outline_24.svg" alt="">
                                 <span>TV series</span>
                             </li>
@@ -173,7 +173,7 @@
                                 <img src="src/assets/img/work_outline_24.svg" alt="">
                                 <span>Startups</span>
                             </li>
-                            <li>
+                            <li class="last-li last-li--two">
                                 <img src="src/assets/img/magic_wand_outline_24.svg" alt="">
                                 <span>Religion</span>
                             </li>
@@ -194,7 +194,7 @@
                     <p>Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership</p>
                 </div>
                 <div class="projects">
-                    <ul class="projects">
+                    <ul>
                         <li>I-teka</li>
                         <li>Dauletten</li>
                         <li>Guru Bosch</li>
@@ -203,47 +203,60 @@
                         <li>BI Partners</li>
                         <li>Europharma</li>
                     </ul>
-                    <a href="#">View 100 more projects</a>
+                    <a class="btn" href="#">View 100 more projects</a>
                 </div>
                 <div class="about-project">
-                    <div class="title">
-                        <h2>I-teka</h2>
-                        <p>The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people, which gives more value.</p>
+                    <div class="left-block">
+                        <div class="title">
+                            <h2>I-teka</h2>
+                            <p>The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people, which gives more value.</p>
+                        </div>
+                        <p>Business analysis <span>/</span> iOS <span>/</span> Android <span>/</span> QA <span>/</span> UI/UX Design</p>
+                        <div class="category-icons">
+                            <div class="country">
+                                <img src="src/assets/img/place_outline_24.svg" alt="">
+                                <span>Kazakhstan</span>
+                            </div>
+                            <div class="industry">
+                                <img src="src/assets/img/work_outline_24.svg" alt="">
+                                <span>Medicine</span>
+                            </div>
+                        </div>
+                        <div class="statistics">
+                            <p><span>400%</span> <br>User Growth</p>
+                            <p><span>+ 200 000</span> <br>Active Users</p>
+                        </div>
+                        <div class="download-links">
+                            <img src="src/assets/img/app-store.svg" alt="">
+                            <img src="src/assets/img/google_play.svg" alt="">
+                        </div>
                     </div>
-                    <p>Business analysis / iOS / Android / QA / UI/UX Design</p>
-                    <div class="country">
-                        <img src="src/assets/img/place_outline_24.svg" alt="">
-                        <span>Kazakhstan</span>
-                    </div>
-                    <div class="industry">
-                        <img src="src/assets/img/work_outline_24.svg" alt="">
-                        <span>Medicine</span>
-                    </div>
-                    <div class="statistics">
-                        <p>400% User Growth</p>
-                        <p>+ 200 000 Active Users</p>
-                    </div>
-                    <div class="download-links">
-                        <img src="src/assets/img/app-store.svg" alt="">
-                        <img src="src/assets/img/google_play.svg" alt="">
+                    <div class="right-block">
+                        <img src="./src/assets/img/i-teka.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="discuss-project">
+        <section class="discuss-projects">
             <div class="container">
                 <div class="title">
-                    <h2>Let's discuss Your project</h2>
+                    <h2>Let's discuss <br>Your project</h2>
                     <p>Let's figure out how to create an effective application, its cost and terms of its development</p>
                 </div>
                 <div class="contact-form">
                     <form action="#">
-                        <label for="phone">Best phone number</label>
-                        <input type="phone" id="phone">
-                        <label for="name">Full name</label>
-                        <input type="text" id="name">
-                        <input type="submit" value="Discuss the project">
+                        <div class="inputs">
+                            <div class="form-label">
+                                <label for="phone">Best phone number</label>
+                                <input type="phone" id="phone" value="+7 (702) 517-11-98">
+                            </div>
+                            <div class="form-label">
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" value="Иван Иванов">
+                            </div>
+                        </div>
+                        <a type="submit" href="" class="btn">Discuss the project</a>
                     </form>
                 </div>
             </div>
@@ -252,50 +265,54 @@
         <section class="development-stages">
             <div class="container">
                 <div class="title">
-                    <h3>Application Development Stages</h3>
+                    <h2>Application Development Stages</h2>
                 </div>
                 <div class="cards">
-                    <div class="card">
-                        <div class="name-card">
-                            <img src="src/assets/img/planing.svg" alt="">
-                            <p>Analysis</p>
+                    <div class="col">
+                        <div class="card">
+                            <div class="name-card">
+                                <img src="src/assets/img/planing.svg" alt="">
+                                <p>Analysis</p>
+                            </div>
+                            <p>We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</p>
                         </div>
-                        <p>We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</p>
+                        <div class="card">
+                            <div class="name-card">
+                                <img src="src/assets/img/graphic-design.svg" alt="">
+                                <p>Design</p>
+                            </div>
+                            <p>We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</p>
+                        </div>
+                        <div class="card">
+                            <div class="name-card">
+                                <img src="src/assets/img/coding-language.svg" alt="">
+                                <p>Development</p>
+                            </div>
+                            <p>We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <div class="name-card">
-                            <img src="src/assets/img/graphic-design.svg" alt="">
-                            <p>Design</p>
+                    <div class="col">
+                        <div class="card">
+                            <div class="name-card">
+                                <img src="src/assets/img/security.svg" alt="">
+                                <p>Testing</p>
+                            </div>
+                            <p>We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions</p>
                         </div>
-                        <p>We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</p>
-                    </div>
-                    <div class="card">
-                        <div class="name-card">
-                            <img src="src/assets/img/coding-language.svg" alt="">
-                            <p>Development</p>
+                        <div class="card">
+                            <div class="name-card">
+                                <img src="src/assets/img/hosting 1.svg" alt="">
+                                <p>Launching</p>
+                            </div>
+                            <p>We design the application page and publish it in the App Store and Google Play stores.</p>
                         </div>
-                        <p>We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</p>
-                    </div>
-                    <div class="card">
-                        <div class="name-card">
-                            <img src="src/assets/img/security.svg" alt="">
-                            <p>Testing</p>
+                        <div class="card">
+                            <div class="name-card">
+                                <img src="src/assets/img/application.svg" alt="">
+                                <p>Support</p>
+                            </div>
+                            <p>We monitor the stability of the application, update it for new devices and versions of iOS and Android.</p>
                         </div>
-                        <p>We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions</p>
-                    </div>
-                    <div class="card">
-                        <div class="name-card">
-                            <img src="src/assets/img/hosting 1.svg" alt="">
-                            <p>Launching</p>
-                        </div>
-                        <p>We design the application page and publish it in the App Store and Google Play stores.</p>
-                    </div>
-                    <div class="card">
-                        <div class="name-card">
-                            <img src="src/assets/img/application.svg" alt="">
-                            <p>Support</p>
-                        </div>
-                        <p>We monitor the stability of the application, update it for new devices and versions of iOS and Android.</p>
                     </div>
                 </div>
             </div>
@@ -303,64 +320,119 @@
 
         <section class="team common-section">
             <div class="container">
-                <div class="title">
-                    <h2>Our team</h2>
-                    <p>Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.</p>
+                <div class="left-block">
+                    <div class="title">
+                        <h2>Our team</h2>
+                        <p>Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.</p>
+                    </div>
+                    <div class="statistics">
+                        <p><span>28</span> <br>team members</p>
+                        <p><span>+100</span> <br>projects</p>
+                        <p><span>7 years</span> <br>in IT sphere</p>
+                    </div>
+                    <p>All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it</p> 
                 </div>
-                <div class="statistics">
-                    <span>28 team members</span>
-                    <span>+100 projects</span>
-                    <span>7 years in IT sphere</span>
-                    <p>All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it</p>
-                </div>
-                <div class="video">
-                    <img src="src/assets/img/team-video.png" alt="">
+                <div class="right-block">
+                    <div class="video">
+                        <img src="src/assets/img/team-video.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="get-book">
             <div class="container">
-                <div class="title">
-                    <h2>Get the book for free by leaving your contacts</h2>
+                <div class="left-block">
+                    <div class="title">
+                        <h2>Get the book for free by leaving your contacts</h2>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="top-label">
+                                <div class="form-label">
+                                    <label for="phone">Phone number</label>
+                                    <input type="phone" id="phone" value="+7 (111) 111-11-11">
+                                </div>
+                                <div class="form-label">
+                                    <input type="text" id="name" value="Your full name">
+                                </div>
+                            </div>  
+                            <div class="bot-label">
+                                <div class="form-label">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" value="mail@mail.com">
+                                </div>
+                            </div>
+                            <a type="submit" href="" class="btn">Send me ebook to my mail</a>
+                        </form>
+                    </div>
                 </div>
-                <div class="contact-form">
-                    <form action="#">
-                        <label for="phone">Phone number</label>
-                        <input type="phone" id="phone">
-                        <input type="text" id="name" value="Your full name">
-                        <label for="email"></label>
-                        <input type="email" id="email">
-                        <input type="submit" value="Send me ebook to my mail">
-                    </form>
-                </div>
-                <div class="image">
-                    <img src="src/assets/img/book.png" alt="">
+                <div class="right-block">
+                    <div class="book">
+                        <img src="src/assets/img/book.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="faq">
             <div class="container">
-                <div class="question">
-                    <h3>What is the cost of a mobile application?</h3>
-                    <p></p>
+                <div class="title">
+                    <h2>FAQ</h2>
                 </div>
-                <div class="question">
-                    <h3>Do you provide a guarantee for the mobile application?</h3>
-                    <p></p>
-                </div>
-                <div class="question">
-                    <h3>How long will development take?</h3>
-                    <p>Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.
-                        Average development time from start to finished application:
-                        Medium projects up to 3 months.
-                        Large projects about 4-6 months.
-                        To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.</p>
-                </div>
-                <div class="question">
-                    <h3>I will not tell my idea, do you guarantee confidentiality?</h3>
-                    <p></p>
+                <div class="questions">
+                    <div class="left-block">
+                        <div class="question">
+                            <div class="question-text">
+                                <h3>What is the cost of a mobile application?</h3>
+                                <p class="faq-text hidden">123</p>
+                            </div>
+                            <button type="button" class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 36" fill="none">
+                                    <path d="M19.5 19.5V28.5C19.5 29.3284 18.8284 30 18 30C17.1716 30 16.5 29.3284 16.5 28.5V19.5H7.5C6.67157 19.5 6 18.8284 6 18C6 17.1716 6.67157 16.5 7.5 16.5H16.5V7.5C16.5 6.67157 17.1716 6 18 6C18.8284 6 19.5 6.67157 19.5 7.5V16.5H28.5C29.3284 16.5 30 17.1716 30 18C30 18.8284 29.3284 19.5 28.5 19.5H19.5Z" fill="#2D66EE"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="question">
+                            <div class="question-text">
+                                <h3>Do you provide a guarantee for the mobile application?</h3>
+                                <p class="faq-text hidden">123</p>
+                            </div>
+                            <button type="button" class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 36" fill="none">
+                                    <path d="M19.5 19.5V28.5C19.5 29.3284 18.8284 30 18 30C17.1716 30 16.5 29.3284 16.5 28.5V19.5H7.5C6.67157 19.5 6 18.8284 6 18C6 17.1716 6.67157 16.5 7.5 16.5H16.5V7.5C16.5 6.67157 17.1716 6 18 6C18.8284 6 19.5 6.67157 19.5 7.5V16.5H28.5C29.3284 16.5 30 17.1716 30 18C30 18.8284 29.3284 19.5 28.5 19.5H19.5Z" fill="#2D66EE"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <div class="question">
+                            <div class="question-text">
+                                <h3>How long will development take?</h3>
+                                <p class="faq-text">Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.
+                                    Average development time from start to finished application:
+                                    Medium projects up to 3 months.
+                                    Large projects about 4-6 months.
+                                    To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.</p>    
+                            </div>
+                            <button type="button" class="faq-icon faq-icon--active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 36" fill="none">
+                                    <path d="M19.5 19.5V28.5C19.5 29.3284 18.8284 30 18 30C17.1716 30 16.5 29.3284 16.5 28.5V19.5H7.5C6.67157 19.5 6 18.8284 6 18C6 17.1716 6.67157 16.5 7.5 16.5H16.5V7.5C16.5 6.67157 17.1716 6 18 6C18.8284 6 19.5 6.67157 19.5 7.5V16.5H28.5C29.3284 16.5 30 17.1716 30 18C30 18.8284 29.3284 19.5 28.5 19.5H19.5Z" fill="#2D66EE"/>
+                            </svg>
+                            </button>
+                        </div>
+                        <div class="question">
+                            <div class="question-text">
+                                <h3>I will not tell my idea, do you guarantee confidentiality?</h3>
+                                <p class="faq-text hidden">123</p>
+                            </div>
+                            <button type="button" class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 36" fill="none">
+                                    <path d="M19.5 19.5V28.5C19.5 29.3284 18.8284 30 18 30C17.1716 30 16.5 29.3284 16.5 28.5V19.5H7.5C6.67157 19.5 6 18.8284 6 18C6 17.1716 6.67157 16.5 7.5 16.5H16.5V7.5C16.5 6.67157 17.1716 6 18 6C18.8284 6 19.5 6.67157 19.5 7.5V16.5H28.5C29.3284 16.5 30 17.1716 30 18C30 18.8284 29.3284 19.5 28.5 19.5H19.5Z" fill="#2D66EE"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
