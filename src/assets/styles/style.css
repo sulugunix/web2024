@@ -1,12 +1,12 @@
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
-@import "./../../components/common.css";
-@import "./../../components/header.css";
-@import "./../../components/about-us.css";
-@import "./../../components/development-cycle.css";
-@import "./../../components/developed-projects.css";
-@import "./../../components/footer.css";
+@import "../../components/common.css";
+@import "../../components/header.css";
+@import "../../components/about-us.css";
+@import "../../components/development-cycle.css";
+@import "../../components/developed-projects.css";
+@import "../../components/footer.css";
 
 .test {
     color: yellow !important;
