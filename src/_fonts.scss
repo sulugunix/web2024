@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Bold'), local('Inter Bold'),
+         url("/static/fonts/Inter-Bold.ttf") format("truetype"),
+         url("/static/fonts/Inter-Bold.woff2") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Medium'), local('Inter Medium'),
+         url("/static/fonts/Inter-Medium.ttf") format("truetype"),
+         url("/static/fonts/Inter-Medium.woff2") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Regular'), local('Inter Regular'),
+         url("/static/fonts/Inter-Regular.ttf") format("truetype"),
+         url("/static/fonts/Inter-Regular.woff2") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local('SF Pro Text'), local('SF Pro Text-Regular'), local('SF Pro Text Regular'),
+         url("/static/fonts/SFProText-Regular.ttf") format("truetype"),
+         url("/static/fonts/SFProText-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local('SF Pro Text'), local('SF Pro Text-Medium'), local('SF Pro Text Medium'),
+         url("/static/fonts/SFProText-Medium.ttf") format("truetype"),
+         url("/static/fonts/SFProText-Medium.ttf") format("ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local('SF Pro Text'), local('SF Pro Text-Semibold'), local('SF Pro Text Semibold'),
+         url("/static/fonts/SFProText-Semibold.ttf") format("truetype"),
+         url("/static/fonts/SFProText-Semibold.ttf") format("ttf");
+    font-weight: 600;
+}

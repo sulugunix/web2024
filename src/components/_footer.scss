@@ -1,0 +1,61 @@
+/* FOOTER */
+
+.footer {
+	width: 100%;
+	margin: auto 15px;
+	.container {
+		padding: 0px 20px;
+		display: flex;
+		flex-direction: column;
+		border-radius: 12px;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+		align-items: center;
+		gap: 40px;
+		background-color: #101828;
+	}
+	h1 {
+		color: #FFF;
+		font-family: "Inter";
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 18px;
+	}
+}
+.company-info {
+	display: flex;
+	align-self: flex-start;
+	gap: 120px;
+	span {
+		color: #FFF;
+		font-size: 17px;
+		font-weight: 600;
+		line-height: 22px;
+	}
+}
+.number, .post, .address, .request {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.top-info {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	span {
+		color: #98A2B3;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 18px;
+	}
+}
+.world {
+	padding-bottom: 24px;
+	display: flex;
+	gap: 15px;
+	span {
+		color: var(--White, #FFF);
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+}
