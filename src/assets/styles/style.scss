@@ -1,14 +1,14 @@
-@import "./global.scss";
-@import "./fonts.scss";
-@import "./utils.scss";
-@import "./components/common.scss";
-@import "./components/header.scss";
-@import "./components/about-us.scss";
-@import "./components/development-cycle.scss";
-@import "./components/developed-projects.scss";
-@import "./components/proud-projects.scss";
-@import "./components/discuss-projects.scss";
-@import "./components/footer.scss";
+@import "./_global.scss";
+@import "./_fonts.scss";
+@import "./_utils.scss";
+@import "./components/_common.scss";
+@import "./components/_header.scss";
+@import "./components/_about-us.scss";
+@import "./components/_development-cycle.scss";
+@import "./components/_developed-projects.scss";
+@import "./components/_proud-projects.scss";
+@import "./components/_discuss-projects.scss";
+@import "./components/_footer.scss";
 
 
 @media (max-width: 1439px) {
