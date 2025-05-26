@@ -6,6 +6,7 @@ class Pizza {
         this.kkal = kkal;
         this.toppings = [];
     }
+
     addTopping(topping) {
         if (this.toppings.find(t => t.name === topping.name) == undefined) {
             if (this.size.name === "Большая") {
@@ -14,24 +15,30 @@ class Pizza {
             this.toppings.push(topping);
         }
     }
+
     removeTopping(topping) {
         this.toppings = this.toppings.filter(t => t.name !== topping.name);
     }
+
     getToppings() {
         return this.toppings.map(t => t.name);
     }
+
     getSize() {
         return this.size.name;
     }
+
     getName() {
         return this.name;
     }
+
     calculatePrice() {
         let totalPrice = this.price + this.size.price + this.toppings.reduce((total, topping) => {
             return total += topping.price;
         }, 0);
         return totalPrice;
     }
+    
     calculateCalories() {
         let totalKkal = this.kkal + this.size.kkal + this.toppings.reduce((total, topping) => {
             return total += topping.kkal;
