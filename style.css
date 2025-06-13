@@ -1,0 +1,32 @@
+.list_item {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.list_item_inner {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.list_item_arrow, .list_item_folder {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+}
+
+.list_item_items {
+    display: none;
+}
+
+.list_item_open > .list_item_items {
+    display: block;
+}
+
+.list_item_open > .list_item_inner > .list_item_arrow {
+    transform: scaleY(-1);
+}
+
+.list_item_arrow {
+    transition: transform 0.1s;
+}
